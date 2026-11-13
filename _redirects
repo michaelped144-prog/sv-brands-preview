@@ -1,0 +1,11 @@
+# Netlify redirects — one rule per line.
+# Format:  source   destination   status
+#
+# 301 = permanent redirect (SEO-preserved, browser caches it).
+# 302 = temporary.
+
+# Retired pages → their replacement
+/next-step              /coaching         301
+
+# Renamed pages — old slug → new canonical
+/call-scheduled-bump    /call-scheduled   301

@@ -1,0 +1,1 @@
+import{a as e}from"./tracking.D1dripAl.js";const t="sv_tt_cr",o=(new URLSearchParams(window.location.search).get("utm_source")||"").toLowerCase()==="sms";o||e(t,"CompleteRegistration",{content_name:"free-training"});

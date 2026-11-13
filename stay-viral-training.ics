@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Stay Viral//Free Training//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:stayviral-free-training-recurring@stayviral.io
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/New_York:20260719T190000
+DTEND;TZID=America/New_York:20260719T210000
+RRULE:FREQ=WEEKLY;BYDAY=SU
+SUMMARY:Stay Viral — Free Live TikTok Shop Training
+DESCRIPTION:How regular people are stacking $5K–$10K+/month in TikTok Shop commissions and landing $1K+ brand deals — even with zero followers. Hosted by Michael Pedace\, founder of Stay Viral.\n\nJoin link: use the personal join link WebinarJam sent to your email/phone when you registered (search your inbox for "stayviral.io" or "WebinarJam"\, and check spam). Each registrant gets their own unique link.
+LOCATION:Online (WebinarJam)
+URL:https://landing.stayviral.io/free-training
+STATUS:CONFIRMED
+SEQUENCE:1
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Stay Viral training starts in 1 hour
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Stay Viral training starts in 15 minutes
+END:VALARM
+END:VEVENT
+END:VCALENDAR

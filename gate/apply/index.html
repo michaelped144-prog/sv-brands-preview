@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow" /><title>Taking you to the booking page…</title><script>(function(){const CALENDLY = "https://calendly.com/d/cx8x-ygw-scx/strategy-call-masterclass";
+
+			(function () {
+				var url = CALENDLY;
+				try {
+					var q = new URLSearchParams(location.search);
+					var g = function (k) { return (q.get(k) || '').trim(); };
+					var digits10 = function (p) {
+						var n = (p || '').replace(/\D/g, '');
+						return n.length === 11 && n[0] === '1' ? n.slice(1) : n.length === 10 ? n : '';
+					};
+					var normEmail = function (e) {
+						e = (e || '').trim().toLowerCase();
+						if (e.indexOf(' ') > -1 && e.indexOf('@') > -1) e = e.replace(/ /g, '+');
+						return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e) ? e : '';
+					};
+					var out = [];
+					var add = function (k, v) { if (v) out.push(encodeURIComponent(k) + '=' + encodeURIComponent(v)); };
+					var name = g('name') || [g('first'), g('last')].filter(Boolean).join(' ');
+					add('name', name);
+					add('email', normEmail(q.get('email')));
+					var p10 = digits10(q.get('phone'));
+					add('a1', p10 ? '+1' + p10 : '');
+					var skip = { name: 1, first: 1, last: 1, email: 1, phone: 1, a1: 1 };
+					['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(function (k) { add(k, q.get(k)); skip[k] = 1; });
+					q.forEach(function (v, k) { if (!skip[k]) { skip[k] = 1; add(k, v); } });
+					if (out.length) url += '?' + out.join('&');
+				} catch (e) {}
+				location.replace(url);
+			})();
+		})();</script><noscript><meta http-equiv="refresh" content="0;url=https://calendly.com/d/cx8x-ygw-scx/strategy-call-masterclass"></noscript></head> <body style="font-family:system-ui,sans-serif;text-align:center;padding:3rem 1rem;color:#333"> <p>Taking you to the booking page… <a href="https://calendly.com/d/cx8x-ygw-scx/strategy-call-masterclass">Continue</a></p> </body></html>
